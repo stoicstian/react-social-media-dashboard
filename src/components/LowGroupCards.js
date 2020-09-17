@@ -1,8 +1,13 @@
 import React, { Component, Fragment } from "react";
-
+import "../styles/LowGroupCards.scss";
+import LowCard from "./LowCard";
 class LowGroupCards extends Component {
   render() {
-    return <Fragment></Fragment>;
+    return (
+      <Fragment>
+        <LowCard></LowCard>
+      </Fragment>
+    );
   }
 }
 

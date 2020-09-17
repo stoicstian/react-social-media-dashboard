@@ -1,0 +1,31 @@
+@use './styles/TopCard.scss';
+
+.App {
+  border: 1px solid red;
+}
+
+// @media screen and (min-width: 480px) {
+//   .top-cards__content {
+//     @include config.section-grid(1fr 1fr);
+//   }
+
+//   .low-cards__content {
+//     @include config.section-grid(1fr 1fr);
+//   }
+// }
+
+// @media screen and (min-width: 800px) {
+//   .top-cards__content {
+//     @include config.section-grid(1fr 1fr 1fr 1fr);
+//   }
+
+//   .low-cards__content {
+//     @include config.section-grid(1fr 1fr 1fr 1fr);
+//   }
+// }
+
+// @media (prefers-color-scheme: config.$theme-color) {
+//   body {
+//     background: #1d2029;
+//   }
+// }

@@ -1,0 +1,103 @@
+@use './colors';
+@use './fonts';
+@use './config';
+
+// Social Media Card
+.card {
+  overflow: hidden;
+  background-color: colors.$light-grayish-blue;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+
+  // MODIFICADORES
+  &__facebook::before {
+    background: colors.$facebook-color;
+  }
+
+  &__twitter::before {
+    background: colors.$twitter-color;
+  }
+
+  &__instagram::before {
+    background-image: linear-gradient(
+      90deg,
+      colors.$instagram-color-orange,
+      colors.$instagram-color-purple
+    );
+  }
+
+  &__youtube::before {
+    background: colors.$youtube-color;
+  }
+
+  // HEAD
+  &__header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  &__icon-media {
+    margin-right: 6px;
+  }
+
+  &__title {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.9em;
+  }
+  // MAIN
+  &__main {
+    padding: 10px 0px;
+  }
+
+  &__number-total {
+    color: colors.$dark-blue;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  // FOOTER
+  &__footer {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-direction {
+    margin-right: 6px;
+  }
+
+  &__number-today {
+    font-size: 0.7em;
+
+    &__green {
+      color: colors.$lime-green;
+    }
+
+    &__red {
+      color: colors.$bright-red;
+    }
+  }
+}

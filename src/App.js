@@ -1,22 +1,15 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+import Header from "./components/Header";
+import TopGroupCards from "./components/TopGroupCards";
+import LowGroupCards from "./components/LowGroupCards";
 
 function App() {
   return (
     <div className="App">
-      <header class="top-cards__header">
-        <h1 class="top-cards__title">Social Media Dashboard</h1>
-        <p class="top-cards__subtitle">Total Followers: 23,004</p>
-        <div class="switcher">
-          <p class="switcher__text">Dark Mode</p>
-          <input
-            type="checkbox"
-            class="switcher__checkbox"
-            id="switcher__checkbox"
-          />
-          <label class="switcher__widget" for="switcher__checkbox"></label>
-        </div>
-      </header>
+      <Header></Header>
+      <TopGroupCards></TopGroupCards>
+      <LowGroupCards></LowGroupCards>
     </div>
   );
 }
