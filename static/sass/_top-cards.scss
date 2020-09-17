@@ -1,0 +1,42 @@
+@use './colors';
+@use './config';
+
+.top-cards {
+  // @extend %config-wrapper;
+  // @extend %section-grid;
+
+  &__header {
+    @include config.config-wrapper(0px 40px);
+    background-color: #20222f;
+    padding-top: 30px;
+    border-radius: 0px 0px 20px 20px;
+
+    &::after {
+      content: "";
+      height: 100px;
+      display: block;
+    }
+  }
+
+  &__title {
+    color: colors.$dark-blue;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 5px 0px;
+  }
+
+  &__subtitle {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin: 5px 0px;
+    border-bottom: 2px solid colors.$dark-grayish-blue;
+  }
+
+  &__content {
+    @include config.config-wrapper(0px 40px);
+    @include config.section-grid(1fr);
+    margin-top: -70px;
+  }
+}
