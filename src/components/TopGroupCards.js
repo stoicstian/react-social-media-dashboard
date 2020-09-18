@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "../styles/TopGroupCards.scss";
+import "../styles/TopGroupCards.css";
 import TopCard from "./TopCard";
 
 class TopGroupCards extends Component {

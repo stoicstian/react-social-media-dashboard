@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "../styles/LowGroupCards.scss";
+import "../styles/LowGroupCards.css";
 import LowCard from "./LowCard";
 class LowGroupCards extends Component {
   render() {

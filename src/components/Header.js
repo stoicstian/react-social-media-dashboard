@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "../styles/Header.scss";
+import "../styles/Header.css";
 import Switcher from "./Switcher";
 
 class Header extends Component {
