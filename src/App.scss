@@ -1,0 +1,13 @@
+@use './components/sass/config';
+
+@media screen and (min-width: 480px) {
+  .top-cards {
+    @include config.section-grid(1fr 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .top-cards {
+    @include config.section-grid(1fr 1fr 1fr 1fr);
+  }
+}

@@ -1,35 +1,27 @@
-import React, { Component, Fragment } from "react";
-import "../styles/TopCard.css";
+import React, { useState, useEffect, Fragment } from "react";
+import "./TopCard.scss";
 
-class TopCard extends Component {
-  render() {
-    return (
-      <Fragment>
-        <article className="card card__facebook">
-          <header className="card__header">
-            <img
-              className="card__icon-media"
-              src={require("../static/img/icon-facebook.svg")}
-              alt="imagen facebook"
-            />
-            <p className="card__title">{this.props.user}</p>
-          </header>
-          <main class="card__main">
-            <span class="card__number-total">1044</span>
-            <span class="card__description">Followers</span>
-          </main>
-          <footer class="card__footer">
-            <img
-              class="card__icon-direction"
-              src={require("../static/img/icon-up.svg")}
-              alt="icon-up"
-            />
-            <p class="card__number-today card__number-today__green">99 Today</p>
-          </footer>
-        </article>
-      </Fragment>
-    );
-  }
+function TopCard() {
+  return (
+    <Fragment>
+      <article className="card card__facebook">
+        <header className="card__header">
+          <img className="card__icon-media" src="" alt="imagen facebook" />
+          <p className="card__title">@sebastian</p>
+        </header>
+        <main className="card__main">
+          <span className="card__number-total">1987</span>
+          <span className="card__description">followers</span>
+        </main>
+        <footer className="card__footer">
+          <img className="card__icon-direction" src="" alt="icon-up" />
+          <p className="card__number-today card__number-today__green">
+            12 today
+          </p>
+        </footer>
+      </article>
+    </Fragment>
+  );
 }
 
 export default TopCard;

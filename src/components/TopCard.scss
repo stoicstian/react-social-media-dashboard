@@ -1,0 +1,104 @@
+@use "./sass/colors";
+@use "./sass/fonts";
+@use './sass/config';
+
+.card {
+  padding: 0px 100px;
+  overflow: hidden;
+  background-color: colors.$gris-azulado-claro;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+
+  // MODIFICADORES
+  &__facebook::before {
+    background: colors.$facebook;
+  }
+
+  &__twitter::before {
+    background: colors.$twitter;
+  }
+
+  &__instagram::before {
+    background-image: linear-gradient(
+      90deg,
+      colors.$instagram-naranja,
+      colors.$instagram-morado
+    );
+  }
+
+  &__youtube::before {
+    background: colors.$youtube;
+  }
+
+  // HEADER
+  &__header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  &__icon-media {
+    margin-right: 6px;
+  }
+
+  &__title {
+    color: colors.$gris;
+    font-size: 0.9em;
+  }
+
+  // MAIN
+  &__main {
+    padding: 10px 0px;
+  }
+
+  &__number-total {
+    color: colors.$negro;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: colors.$gris;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  // FOOTER
+  &__footer {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-direction {
+    margin-right: 6px;
+  }
+
+  &__number-today {
+    font-size: 0.7em;
+
+    &__green {
+      color: colors.$verde-lima;
+    }
+
+    &__red {
+      color: colors.$rojo-claro;
+    }
+  }
+}

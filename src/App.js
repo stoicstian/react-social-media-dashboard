@@ -1,15 +1,12 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/Header";
-import TopGroupCards from "./components/TopGroupCards";
-import LowGroupCards from "./components/LowGroupCards";
+import { TopGroupCards, Header, TopCard } from "./components/exports";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <TopGroupCards></TopGroupCards>
-      <LowGroupCards></LowGroupCards>
     </div>
   );
 }

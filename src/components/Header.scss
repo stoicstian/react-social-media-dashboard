@@ -1,0 +1,31 @@
+@use "./sass/colors";
+@use "./sass/config";
+
+.header {
+  @extend %config-wrapper;
+  background-color: colors.$azul-claro;
+  padding-top: 30px;
+  border-radius: 0px 0px 20px 20px;
+
+  &::after {
+    content: "";
+    height: 100px;
+    display: block;
+  }
+
+  &__title {
+    color: colors.$negro;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 5px 0px;
+  }
+
+  &__subtitle {
+    color: colors.$gris;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin: 5px 0px;
+    border-bottom: 2px solid colors.$dark-grayish-blue;
+  }
+}

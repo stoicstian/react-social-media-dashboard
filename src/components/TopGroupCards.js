@@ -1,15 +1,18 @@
-import React, { Component, Fragment } from "react";
-import "../styles/TopGroupCards.css";
+import React, { Fragment } from "react";
 import TopCard from "./TopCard";
+import "./TopGroupCards.scss";
 
-class TopGroupCards extends Component {
-  render() {
-    return (
-      <Fragment>
-        <TopCard user="Sebastián"></TopCard>
-      </Fragment>
-    );
-  }
+function TopGroupCards() {
+  return (
+    <Fragment>
+      <main className="top-cards">
+        <TopCard></TopCard>
+        <TopCard></TopCard>
+        <TopCard></TopCard>
+        <TopCard></TopCard>
+      </main>
+    </Fragment>
+  );
 }
 
 export default TopGroupCards;

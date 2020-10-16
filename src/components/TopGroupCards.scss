@@ -1,0 +1,8 @@
+@use './sass/colors';
+@use './sass/config';
+
+.top-cards {
+  @include config.config-wrapper(0px 40px);
+  @include config.section-grid(1fr);
+  margin-top: -70px;
+}
