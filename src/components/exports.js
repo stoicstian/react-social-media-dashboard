@@ -1,5 +1,6 @@
 import TopCard from "./TopCard";
 import Header from "./Header";
 import TopGroupCards from "./TopGroupCards";
+import LowGroupCards from "./LowGroupCards";
 
-export { TopGroupCards, TopCard, Header };
+export { TopGroupCards, LowGroupCards, TopCard, Header };

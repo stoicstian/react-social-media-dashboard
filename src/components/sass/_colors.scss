@@ -25,3 +25,8 @@ $dark-blue: #fff;
 // Toggle widget
 $toggle-blue: hsl(210, 78%, 56%);
 $toggle-green: hsl(146, 68%, 55%);
+
+%colores {
+  background-color: yellow;
+  color: red;
+}

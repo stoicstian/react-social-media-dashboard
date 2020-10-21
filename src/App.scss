@@ -4,10 +4,18 @@
   .top-cards {
     @include config.section-grid(1fr 1fr);
   }
+
+  .low-cards {
+    @include config.section-grid(1fr 1fr);
+  }
 }
 
 @media screen and (min-width: 800px) {
   .top-cards {
+    @include config.section-grid(1fr 1fr 1fr 1fr);
+  }
+
+  .low-cards {
     @include config.section-grid(1fr 1fr 1fr 1fr);
   }
 }

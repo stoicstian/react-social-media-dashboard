@@ -1,22 +1,43 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { Fragment } from "react";
 import "./TopCard.scss";
+// import style from "./TopCard.module.scss";
 
-function TopCard() {
+function TopCard({
+  userName,
+  followers,
+  todayFollowers,
+  socialMedia,
+  icon,
+  socialName,
+}) {
   return (
     <Fragment>
-      <article className="card card__facebook">
-        <header className="card__header">
-          <img className="card__icon-media" src="" alt="imagen facebook" />
-          <p className="card__title">@sebastian</p>
+      {/* <article className={`${style.card-top}`}> */}
+      {/* <article className="card-top card-top__facebook"> */}
+      <article className={`card-top card-top__${socialName}`}>
+        {/* <article className="card-top card-top__facebook"> */}
+        <header className="card-top__header">
+          <img
+            className="card-top__icon-media"
+            src={socialMedia}
+            alt="imagen facebook"
+          />
+          <p className="card-top__title">{userName}</p>
         </header>
-        <main className="card__main">
-          <span className="card__number-total">1987</span>
-          <span className="card__description">followers</span>
+        <main className="card-top__main">
+          <span className="card-top__number-total">{followers}</span>
+          <span className="card-top__description">followers</span>
         </main>
-        <footer className="card__footer">
-          <img className="card__icon-direction" src="" alt="icon-up" />
-          <p className="card__number-today card__number-today__green">
-            12 today
+        <footer className="card-top__footer">
+          <img className="card-top__icon-direction" src={icon} alt="icon-up" />
+          <p
+            className={
+              todayFollowers >= 0
+                ? "card-top__number-today card-top__number-today__green"
+                : "card-top__number-today card-top__number-today__red"
+            }
+          >
+            {todayFollowers} today
           </p>
         </footer>
       </article>

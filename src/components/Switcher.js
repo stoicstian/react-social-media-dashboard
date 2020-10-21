@@ -11,7 +11,10 @@ function Switcher() {
           className="switcher__checkbox"
           id="switcher__checkbox"
         />
-        <label className="switcher__widget" for="switcher__checkbox"></label>
+        <label
+          className="switcher__widget"
+          htmlFor="switcher__checkbox"
+        ></label>
       </div>
     </Fragment>
   );

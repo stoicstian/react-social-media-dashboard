@@ -1,0 +1,53 @@
+@use './sass/colors';
+@use "./sass/config";
+
+.card-low {
+  background-color: colors.$gris-azulado-claro;
+  border-radius: 8px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  align-content: center;
+
+  &__text-views {
+    font-weight: 700;
+    font-size: 0.7em;
+    color: colors.$gris;
+  }
+
+  &__icon-media {
+    text-align: right;
+  }
+
+  &__number-views {
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 0.9em;
+    color: colors.$negro;
+  }
+
+  &__percentage-views {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    font-weight: 500;
+    &_green {
+      color: colors.$verde-lima;
+    }
+
+    &_red {
+      color: colors.$rojo-claro;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
