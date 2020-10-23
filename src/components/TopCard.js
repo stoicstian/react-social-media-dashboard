@@ -13,9 +13,7 @@ function TopCard({
   return (
     <Fragment>
       {/* <article className={`${style.card-top}`}> */}
-      {/* <article className="card-top card-top__facebook"> */}
       <article className={`card-top card-top__${socialName}`}>
-        {/* <article className="card-top card-top__facebook"> */}
         <header className="card-top__header">
           <img
             className="card-top__icon-media"

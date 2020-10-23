@@ -1,5 +1,6 @@
 @use './components/sass/config';
 
+/* BUG: CUANDO SE MODIFICA EL TAMAÑO DE LA PANTALLA LOS TEXTOS DE LAS TARJETAS NO SE CENTRAN ADECUADAMENTE */
 @media screen and (min-width: 480px) {
   .top-cards {
     @include config.section-grid(1fr 1fr);
@@ -14,7 +15,6 @@
   .top-cards {
     @include config.section-grid(1fr 1fr 1fr 1fr);
   }
-
   .low-cards {
     @include config.section-grid(1fr 1fr 1fr 1fr);
   }

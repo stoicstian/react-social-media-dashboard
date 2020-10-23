@@ -43,7 +43,7 @@ const cardListData = [
     id: 4,
     userName: "@sebastian",
     followers: "12k",
-    todayFollowers: -50,
+    todayFollowers: 50,
     socialMedia: youtube,
     socialName: "youtube",
     icon: iconDown,
@@ -57,35 +57,8 @@ function TopGroupCards() {
         {cardListData.map((cardData) => (
           <TopCard key={cardData.id} {...cardData}></TopCard>
         ))}
-        {/* <TopCard
-          userName="@sebastian"
-          numberFollowers="150"
-          todayFollowers="5"
-          socialImage={facebook}
-          directionImage={iconUp}
-        ></TopCard>
-        <TopCard
-          userName="@sebastian"
-          numberFollowers="150"
-          todayFollowers="5"
-          socialImage={twitter}
-          directionImage={iconUp}
-        ></TopCard>
-        <TopCard
-          userName="@sebastian"
-          numberFollowers="150"
-          todayFollowers="5"
-          socialImage={instagram}
-          directionImage={iconUp}
-        ></TopCard>
-        <TopCard
-          userName="@sebastian"
-          numberFollowers="150"
-          todayFollowers="5"
-          socialImage={youtube}
-          directionImage={iconUp}
-        ></TopCard> */}
       </main>
+      {console.log(facebook)}
     </Fragment>
   );
 }
